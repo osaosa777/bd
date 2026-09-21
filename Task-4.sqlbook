@@ -1,0 +1,16 @@
+-- SQLBook: Code
+UPDATE Readers
+SET Telephone = '+7-900-000-00-00'
+WHERE Reader_id = 1;
+
+UPDATE Loans
+SET Actual_return_date = '20250528'
+WHERE id_loan = 1;
+
+INSERT INTO Readers(Full_Name, Telephone)
+VALUES('Тестовый читатель', '+7-525-252-52-52');
+
+DELETE FROM Readers
+WHERE Reader_id = 5;
+
+-- SQLBook: Markup

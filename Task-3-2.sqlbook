@@ -1,0 +1,29 @@
+-- SQLBook: Code
+create table Books (
+    ISBN VARCHAR(100) PRIMARY KEY,
+    Title VARCHAR(1000) NOT NULL,
+    Year_of_publication INT CHECK(Year_of_publication > 0)
+);
+
+create table Authors (
+    Author_id INT PRIMARY KEY,
+    Author_full_name VARCHAR(1000) NOT NULL
+);
+
+
+INSERT INTO Authors(Author_id, Author_full_name)
+VALUES('1', 'Михаил Булгаков'),
+('2', 'Федор Достоевский'),
+('3', 'Лев Толстой'),
+('4', 'Илья Ильф'),
+('5', 'Евгений Петров'), 
+('6', 'Аркадий Стругацкий'), 
+('7', 'Борис Стругацкий');
+
+INSERT INTO Books(ISBN, Title, Year_of_publication)
+VALUES ('978-5-17-118366-8', 'Мастер и Маргарита', '1967'),
+('978-5-389-06256-6 ', 'Преступление и наказание', '1866'),
+('978-5-04-116716-3', 'Война и мир', '1869'),
+('978-5-699-12014-7', 'Золотой теленок', '1931'),
+('978-5-389-03713-7', 'Пикник на обочине', '1972');
+

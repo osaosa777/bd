@@ -1,0 +1,11 @@
+-- SQLBook: Code
+create table Readers(
+    Reader_id SERIAL PRIMARY KEY,
+    Full_Name VARCHAR(1000) NOT NULL,
+    Telephone VARCHAR(20) NOT NULL
+);
+INSERT INTO Readers(Full_Name, Telephone)
+VALUES('Анна Петрова', '+7-900-111-22-33'), 
+('Иван Соколов', '+7-900-222-33-44'),
+('Мария Ким', '+7-900-333-44-55'),
+('Олег Васильев', '+7-900-444-55-66');
